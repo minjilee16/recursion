@@ -5,6 +5,7 @@ describe('stringifyJSON', function() {
     stringifiableObjects.forEach(function(test) {
       var expected = JSON.stringify(test);
       var result = stringifyJSON(test);
+    
       expect(result).to.equal(expected);
     });
 
@@ -16,3 +17,5 @@ describe('stringifyJSON', function() {
 
   });
 });
+
+
